@@ -8,6 +8,7 @@ import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "https://ewinat.herokuapp.com/")
 @RestController
 @RequestMapping("/przychod")
 public class PrzychodRestController {
