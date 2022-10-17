@@ -40,9 +40,8 @@ public class PrzychodRestController {
     }
 
     @DeleteMapping("/{id}")
-    ResponseEntity<?> deleteById(@PathVariable Integer id){
+    void deleteById(@PathVariable Integer id){
         przychodService.deleteById(id);
-        return ResponseEntity.ok().build();
     }
 
     @GetMapping("/pobierzDaneDoTabeli")
