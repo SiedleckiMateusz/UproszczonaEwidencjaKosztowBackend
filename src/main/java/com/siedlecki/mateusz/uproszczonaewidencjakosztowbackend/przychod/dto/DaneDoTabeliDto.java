@@ -35,7 +35,7 @@ public class DaneDoTabeliDto {
             przychodyDoTabeliList.add(dto);
         }
 
-        przychodyDoTabeliList.sort(Comparator.comparing(PrzychodDoTabeliDto::getData).reversed());
+        przychodyDoTabeliList.sort(Comparator.comparing(PrzychodDoTabeliDto::getKwotaNarastajacoOdPoczatku).reversed());
 
         if (!przychodyDoTabeliList.isEmpty()){
             sredniaDziennie = przychodCalkowity/przychodyDoTabeliList.size();
